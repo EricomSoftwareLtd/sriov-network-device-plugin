@@ -28,6 +28,7 @@ spec:
       hostNetwork: true
       nodeSelector:
         kubernetes.io/arch: amd64
+        pool-type: ncx-gateway
       tolerations:
       - key: node-role.kubernetes.io/master
         operator: Exists
@@ -115,6 +116,7 @@ spec:
       hostNetwork: true
       nodeSelector:
         kubernetes.io/arch: ppc64le
+        pool-type: ncx-gateway
       tolerations:
       - key: node-role.kubernetes.io/master
         operator: Exists
@@ -195,6 +197,7 @@ spec:
       hostNetwork: true
       nodeSelector:
         kubernetes.io/arch: arm64
+        pool-type: ncx-gateway
       tolerations:
       - key: node-role.kubernetes.io/master
         operator: Exists
